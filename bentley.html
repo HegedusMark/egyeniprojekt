@@ -1,104 +1,149 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bentley</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bentley</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
+
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Bentley</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Főoldal</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Modellek</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Galéria</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Kapcsolatfelvétel</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4">Üdvözöl a Bentley</h1>
-        <p class="lead">Tapasztalja meg a luxust és a teljesitményt mint még soha.</p>
-      </div>
-    </div>
-
-    <div class="container">
-      <h2>A Bentley-ről</h2>
-      <p>A Bentley Motors egy brit luxus automobile márka köztudott a magas teljesitményű luxusautókról. A több mint egy évszázadot átívelő gazdag örökséggel a Bentley a luxus, a kivitelezés és az elegancia szinonimájává vált.</p>
-
-      <h2>Modellek</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <img src="B1.jpg" class="card-img-top" alt="Flying Spur">
-            <div class="card-body">
-              <h5 class="card-title">Flying Spur sorozat</h5>
-              <p class="card-text">A Flying Spur egy luxuslimuzin, amely a lenyűgöző teljesítmény és a kifinomult kivitelezés egyedülálló kombinációját kínálja.</p>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" id="fooldal">Bentley</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#fooldal">Főoldal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#modell">Modellek</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#galeria">Galéria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kapcs">Kapcsolatfelvétel</a>
+                    </li>
+                </ul>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <img src="bentley-model2.jpg" class="card-img-top" alt="Bentley Model 2">
-            <div class="card-body">
-              <h5 class="card-title">Bentley Model 2</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+        </nav>
+    </header>
+
+    <main>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Üdvözöl a Bentley</h1>
+                <p class="lead">Tapasztalja meg a luxust és a teljesitményt mint még soha.</p>
             </div>
-          </div>
         </div>
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <img src="bentley-model3.jpg" class="card-img-top" alt="Bentley Model 3">
-            <div class="card-body">
-              <h5 class="card-title">Bentley Model 3</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+
+        <div class="container">
+            <h2>A Bentley-ről</h2>
+            <p>A Bentley Motors egy brit luxus automobile márka köztudott a magas teljesitményű luxusautókról. A több
+                mint egy évszázadot átívelő gazdag örökséggel a Bentley a luxus, a kivitelezés és az elegancia
+                szinonimájává vált.</p>
+
+            <h2 id="modell">Modellek</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="B1.jpg" class="card-img-top" alt="Flying Spur">
+                        <div class="card-body">
+                            <h5 class="card-title">Flying Spur sorozat</h5>
+                            <p class="card-text">A Flying Spur egy luxuslimuzin, amely a lenyűgöző teljesítmény és a
+                                kifinomult kivitelezés egyedülálló kombinációját kínálja.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="B2.jpg" class="card-img-top" alt="Bentley Model 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Bentayga sorozat</h5>
+                            <p class="card-text">Egyetlen más SUV sem versenyezhet a Bentaygával, ha a kivitelezésről, a
+                                kényelemről vagy a puszta vidámságról van szó.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="B3.jpg" class="card-img-top" alt="Bentley Model 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Continental sorozat</h5>
+                            <p class="card-text">Ismerje meg a végső gt autót. Ez az egyedülálló kombinációja az erőnek,
+                                a kivitelezésnek és a lenyűgöző autóipari dizájnnak.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <h2>Contact</h2>
-      <form>
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" class="form-control" id="name" placeholder="Enter your name">
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" class="form-control" id="email" placeholder="Enter your email">
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-    </div>
-  </main>
+            <h2 id="galeria">Galéria</h2>
+            <div class="row">
+                
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="B4.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="B5.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="B6.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="B7.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="B8.jpg" class="card-img-top">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="B9.jpg" class="card-img-top">
+                    </div>
+                </div>
+            </div>
 
-  <footer class="bg-dark text-white text-center py-3">
-    <p>&copy; 2023 Bentley Motors. All rights reserved.</p>
-  </footer>
 
-  <!-- Bootstrap JS -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            <h2 id="kapcs">Kapcsolatfelvétel</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Név</label>
+                    <input type="text" class="form-control" id="name" placeholder="Adja meg a nevét">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Adja meg az email cimét">
+                </div>
+                <div class="form-group">
+                    <label for="message">Üzenet</label>
+                    <textarea class="form-control" id="message" rows="5"
+                        placeholder="Adja meg mit kiván üzenni"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Küldés</button>
+            </form>
+        </div>
+        
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2023 Bentley Motors. Minden jog fenntartva.</p>
+        <a href="#fooldal">Vissza a tetejére</a>
+    </footer>
 </body>
+
 </html>
